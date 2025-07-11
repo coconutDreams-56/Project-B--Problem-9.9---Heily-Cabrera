@@ -98,26 +98,26 @@ int main()
     myregister.add_item(7.79);
     myregister.add_item(1.25);
     myregister.display_all();
-    cout << "Total: $" << register.get_tot() << endl;
-    cout << "Item count: " << register.get_count() << endl;
+    cout << "Total: $" << myregister.get_tot() << endl;
+    cout << "Item count: " << myregister.get_count() << endl;
     myregister.clear(); // Ends transaction
 
     myregister.add_item(5.99);
     myregister.add_item(2.50);
     cout << "\nSecond customer:\n";
     myregister.display_all();
-    cout << "Total: $" << register.get_tot() << endl;
+    cout << "Total: $" << myregister.get_tot() << endl;
     myregister.clear(); // Ends transaction
 
     cout << "\nEnd of day report:" << endl;
-    cout << "Total sales: $" << register.get_sales_total() << endl;
-    cout << "Number of transactions: " << register.get_sales_count() << endl;
+    cout << "Total sales: $" << myregister.get_sales_total() << endl;
+    cout << "Number of transactions: " << myregister.get_sales_count() << endl;
 
     
     myregister.reset_sales();
     cout << "\nSales reset for next day." << endl;
-    cout << "Total sales: $" << register.get_sales_total() << endl;
-    cout << "Number of transactions: " << register.get_sales_count() << endl;
+    cout << "Total sales: $" << myregister.get_sales_total() << endl;
+    cout << "Number of transactions: " << myregister.get_sales_count() << endl;
 
     return 0;
 
